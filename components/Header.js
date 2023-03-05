@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 
 function Header() {
@@ -10,10 +11,12 @@ function Header() {
 
   return (
     <div className='flex flex-row justify-between px-8 py-4 mb-14 md:mb-0'>
-        <div className="flex flex-row align-middle space-x-2 text-white text-3xl font-semibold">
-            <Image src={'/logo.png'} width={50} height={40} alt="kayafriends" />
-            <span className="bg-gradient-to-r from-blue-600 via-blue-200 to-purple-500 inline-block text-transparent bg-clip-text">Kaya friends</span>
+        <Link href="/">
+            <div className="flex flex-row align-middle space-x-2 text-white text-3xl font-semibold">
+            <Image src={'/header-logo.png'} width={190} height={100} alt="kayafriends" />
+            {/* <span className="bg-gradient-to-r from-blue-600 via-blue-200 to-purple-500 inline-block text-transparent bg-clip-text">Kaya friends</span> */}
         </div>
+        </Link>
         <div className="text-white" onClick={swapMenu}>
             <Image src={'/icons/menu-fries.svg'} width={35} height={35} alt='menu'/>
             {show && 
@@ -46,7 +49,7 @@ function Header() {
                             <p>download for ios</p> 
                         </div>
                         <div className="text-gray-400 align-baseline p-y4">
-                            email us info@kayafriends.com <br/>
+                            email us hello@kayafriends.com <br/>
                             Financial Center, Dubai
                         </div>
                     </div>
