@@ -10,10 +10,10 @@ function Header() {
 
 
   return (
-    <div className='flex flex-row justify-between px-8 py-4 mb-14 md:mb-0'>
+    <div className='flex items-center flex-row justify-between px-8 py-4 mb-14 md:mb-0'>
         <Link href="/">
             <div className="flex flex-row align-middle space-x-2 text-white text-3xl font-semibold">
-            <Image src={'/header-logo.png'} width={190} height={100} alt="kayafriends" />
+            <Image src={'/logo-large.png'} width={100} height={100} alt="kayafriends" />
             {/* <span className="bg-gradient-to-r from-blue-600 via-blue-200 to-purple-500 inline-block text-transparent bg-clip-text">Kaya friends</span> */}
         </div>
         </Link>

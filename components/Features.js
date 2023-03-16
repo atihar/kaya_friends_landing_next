@@ -6,7 +6,7 @@ function Features() {
     <section className='max-w-screen-xl mx-auto py-10'>
         <div className='text-center'>
                 <h2 className='text-pink-400 py-4 text-xl'>Features</h2>
-                <h2 className='text-white text-5xl font-bold'>Why KayaFriends</h2>
+                <h2 className='text-blue-300 text-5xl font-bold'>Why KayaFriends</h2>
                 <h2 className='text-gray-300 py-4 text-xl'>What you are going to discover differences with other friend making apps</h2>
                 <div className='flex space-x-4'>
                     <div className='py-16 px-8 rounded-xl border-2 border-blue-200'>
@@ -40,8 +40,8 @@ function Features() {
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
                     <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
                     </svg>
-                <h2 className='mt-4 text-5xl text-blue-200'>No credit card 
-                <div className=' text-pink-400'> is required
+                <h2 className='mt-4 text-5xl text-blue-200'>Zero
+                <div className=' text-pink-400'> cost to start
                 </div></h2>
             </div>
         </div>
