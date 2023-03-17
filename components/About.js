@@ -4,10 +4,10 @@ import React from 'react'
 function About() {
   return (
     <section className='max-w-screen-xl mx-auto'>
-        <div className='grid grid-cols-2'>
-            <div>
+        <div className='grid md:grid-cols-2'>
+            <div className='px-2'>
                 <h2 className='text-pink-400 py-4 text-xl'>steps</h2>
-                <h2 className='text-blue-300 text-5xl font-bold'>Easy app for pro friends</h2>
+                <h2 className='text-blue-300 text-3xl md:text-5xl font-bold'>Easy app for pro friends</h2>
                 <h2 className='text-gray-300 py-4 text-xl'>You can start with kayafriends within just couple of clicks</h2>
                 <div className='py-4'>
                     <h3 className='text-pink-400 text-3xl font-bold '>Sign up</h3>

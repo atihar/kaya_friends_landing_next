@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import logo from "../public/logo-large.png"
 
 function Header() {
     const [show, setShow] = useState(false)
@@ -13,7 +14,7 @@ function Header() {
     <div className='flex items-center flex-row justify-between px-8 py-4 mb-14 md:mb-0'>
         <Link href="/">
             <div className="flex flex-row align-middle space-x-2 text-white text-3xl font-semibold">
-            <Image src={'/logo-large.png'} width={100} height={100} alt="kayafriends" />
+            <Image src={logo} width={100} height={100} alt="kayafriends" />
             {/* <span className="bg-gradient-to-r from-blue-600 via-blue-200 to-purple-500 inline-block text-transparent bg-clip-text">Kaya friends</span> */}
         </div>
         </Link>

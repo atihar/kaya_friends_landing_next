@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
+
 
 function Reviews() {
   return (
@@ -10,7 +10,7 @@ function Reviews() {
                 <h2 className='text-blue-300 text-5xl font-bold'>Why KayaFriends</h2>
                 <h2 className='text-gray-300 py-4 text-xl'>What you are going to discover differences with other friend making apps</h2>
                 <div className='max-w-screen overflow-x-scroll text-left mt-8'>
-                <div className='inline-grid grid-flow-col gap-4 overflow-x-scroll'>
+                <div className='inline-grid grid-flow-col gap-4'>
                     <div className='w-[400px] py-16 px-8 rounded-xl border-2 border-blue-200'>
                         <div className='flex space-x-4 items-center'>
                             <div className='h-16 w-16 bg-white rounded-full'></div>
@@ -44,9 +44,25 @@ function Reviews() {
         </div>
         <Link href={'/become-an-early-bird'}>
             <div className='mt-10 text-center h-96 flex flex-col justify-center items-center bg-pink-900 rounded-2xl shadow'>
-                <h2 className='mt-4 text-5xl text-blue-200'>Become
-                    <div className=' text-blue-200'>an early bird</div>
+                <h2 className='mt-4 text-3xl md:text-5xl text-blue-200'>Join
+                    <div className=' text-blue-200'>early access program</div>
                 </h2>
+                <div className='grid md:grid-cols-2 my-6 text-gray-100'>
+                    <div className='flex items-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-6 h-6 bi bi-bookmark-heart" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                        </svg>
+                        <p>Exclusive club joining</p>
+                    </div>
+                    <div className='flex items-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-6 h-6 bi bi-bookmark-heart" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                        </svg>
+                        <p>Discounted premium plan</p>
+                    </div>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="text-blue-200 mt-4 bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                 <path fillRule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
                 </svg>
