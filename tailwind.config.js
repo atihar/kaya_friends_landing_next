@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'gruppo': ['Gruppo', 'cursive'],
+    },
     extend: {},
   },
   plugins: [],

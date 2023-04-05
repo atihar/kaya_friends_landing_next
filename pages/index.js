@@ -8,14 +8,14 @@ import Reviews from "../components/Reviews";
 
 function Home() {
   return (
-    <div className="bg-gradient-to-r from-blue-900 via-pink-900 to-gray-900 px-4">
+    <div className="bg-black w-screen">
       <Head>
         <title>KayaFriends</title>
         <meta name="description" content="Kaya friends is a Dubai based Swedish startup who are working to connect professionals in a more socialistic way."/>
       </Head>
       <Header/>
       <Hero/>
-      <About/>
+      {/* <About/> */}
       <Features/>
       <Reviews/>
       <Footer/>

@@ -1,24 +1,37 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 function Hero() {
+    const [download, setDownload] = useState(false)
   return (
-    <div>
-        <div className='max-w-screen-xl mx-auto font-bold text-white text-5xl md:text-8xl text-center'>
-            <p className='bg-gradient-to-r from-blue-600 via-blue-200 to-purple-500 inline-block text-transparent bg-clip-text'>SOCIAL CLUBS ONLINE..</p>
-        </div>
-        <p className="max-w-screen-xl text-lg mx-auto text-center p-6 text-gray-200">It is specially designed for any kind of professionals that want to network more,
-            <br/> and can find a viable group whom they can do social gatherings</p>
-        <div className='px-12 py-16'>
-            <div className='flex w-full justify-center px-0 md:px-8'>
-                <div className='text-center p-2 md:px-8'>
-                    <Image width={300} height={400} className="object-contain rounded-lg" src='/Splash.png' alt='app-1'/>
-                </div>
-                <div className='text-center p-2 md:px-8'>
-                    <Image width={300} height={400} className="object-contain rounded-lg" src='/Home.png' alt="jane"/>
-                </div>
+    <div className='max-w-screen-xl mx-auto px-4'>
+        {/* <div className='max-w-screen-xl mx-auto font-bold text-white text-5xl md:text-8xl text-center'>
+            <p className='font-gruppo bg-gradient-to-r from-blue-600 via-blue-200 to-purple-500 inline-block text-transparent bg-clip-text'>SOCIAL CLUBS ONLINE..</p>
+        </div> */}
+        <div className='grid md:grid-cols-2 items-center'>
+            <div className=''>
+                <h2 className='font-gruppo text-gray-200 text-5xl md:text-7xl uppercase'>Network in Social Clubs</h2>
+                <p className="text-lg mt-6 text-gray-200">Whether you&apos;re interested in gaming, business or crypto, we have a club for you.<br/>All in one DApp</p>
             </div>
-            <div className='mx-8 flex justify-center space-x-4 py-8'>
+            <div className='grid place-items-center'>
+                    <Image width={150} height={200} className="w-1/5 sm:w-100 rotate-90" src='/assets/22.gif' alt='app-1'/>
+                    <Image width={300} height={400} className="-translate-y-28 " src='/assets/11.gif' alt="app-2"/>
+            </div>
+        </div>
+        
+            <div className='grid md:grid-cols-3 md:mb-24'>
+                    <Image width={600} height={600} className="w-72 h-96 object-cover" src='/assets/14.png' alt='app-1'/>
+                    <Image width={600} height={600} className="w-72 h-96 object-cover" src='/assets/12.png' alt="jane"/>
+                    <Image width={600} height={600} className="w-72 h-96 object-cover" src='/assets/13.png' alt="jane"/>
+            </div>
+            {!download ?
+                <div className='mx-8 flex justify-center space-x-4 py-8'>
+                    <button onClick={()=>setDownload(true)} className='flex items-center gap-x-4 cursor-pointer text-white px-16 py-8 rounded-lg bg-gradient-to-r from-[#E13FE2] to-[#04D7F7]'>
+                        <p className='text-xl uppercase font-gruppo'>Get Kayafriends</p> 
+                    </button>
+                </div> 
+                :
+                <div onClick={()=>setDownload(false)} className='mx-8 flex justify-center space-x-4 py-8'>
                 <div className='flex items-center gap-x-4 cursor-pointer text-gray-400 px-10 py-3 rounded-lg border-gray-400 border hover:border-blue-300'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" className="bi bi-google-play" viewBox="0 0 16 16">
                         <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
@@ -33,7 +46,7 @@ function Hero() {
                         <p className='text-xs'> for iphone</p> 
                     </div>
             </div>
-        </div>
+}
     </div>
   )
 }

@@ -36,7 +36,7 @@ function BecomeAnEarlyBird() {
 
 
   return (
-    <div className="bg-gradient-to-r from-blue-900 via-pink-900 min-h-screen to-gray-900">
+    <div className="bg-black min-h-screen to-gray-900">
         <Head>
         <title>Early access - Kaya Friends</title>
         <meta name="description" content="Kaya friends is a Dubai based Swedish startup who are working to connect professionals in a more socialistic way."/>

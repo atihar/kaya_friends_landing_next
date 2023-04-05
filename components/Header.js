@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import logo from "../public/logo-large.png"
 
 function Header() {
     const [show, setShow] = useState(false)
@@ -11,17 +10,17 @@ function Header() {
 
 
   return (
-    <div className='flex items-center flex-row justify-between px-8 py-4 mb-14 md:mb-0'>
+    <div onClick={swapMenu} className='flex items-center flex-row justify-between px-8 py-4 mb-14 md:mb-0'>
         <Link href="/">
             <div className="flex flex-row align-middle space-x-2 text-white text-3xl font-semibold">
-            <Image src={logo} width={100} height={100} alt="kayafriends" />
-            {/* <span className="bg-gradient-to-r from-blue-600 via-blue-200 to-purple-500 inline-block text-transparent bg-clip-text">Kaya friends</span> */}
+            <Image src='/logo.png' className="w-12 md:w-16 " width={150} height={150} alt="kayafriends" />
+            <Image src='/assets/logo.png' className="object-contain w-36 md:w-56" width={250} height={50} alt="kayafriends" />
         </div>
         </Link>
         <div className="text-white" onClick={swapMenu}>
             <Image src={'/icons/menu-fries.svg'} width={35} height={35} alt='menu'/>
             {show && 
-            <div className="fixed m-auto top-0 right-0 w-[400px] h-screen bg-gradient-to-r from-indigo-900 to-purple-900 p-6">
+            <div className="fixed z-10 m-auto top-0 right-0 w-[400px] h-screen bg-gradient-to-r from-indigo-900 to-purple-900 p-6">
                 <div className='max-w-screen-xl mx-auto flex flex-col py-6 space-y-4'>
                         <div className="flex justify-end p-4">
                             <button onClick={() => setShow(!show)}>
