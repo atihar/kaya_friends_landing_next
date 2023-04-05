@@ -10,11 +10,11 @@ function Header() {
 
 
   return (
-    <div onClick={swapMenu} className='flex items-center flex-row justify-between px-8 py-4 mb-14 md:mb-0'>
+    <div onClick={swapMenu} className='max-w-screen-xl mx-auto flex items-center flex-row justify-between py-4 mb-14 md:mb-0'>
         <Link href="/">
             <div className="flex flex-row align-middle space-x-2 text-white text-3xl font-semibold">
-            <Image src='/logo.png' className="w-12 md:w-16 " width={150} height={150} alt="kayafriends" />
-            <Image src='/assets/logo.png' className="object-contain w-36 md:w-56" width={250} height={50} alt="kayafriends" />
+            <Image src='/logo.png' className="w-12 md:w-24 " width={150} height={150} alt="kayafriends" />
+            <Image src='/assets/logo.png' className="object-contain w-36 md:w-72" width={250} height={50} alt="kayafriends" />
         </div>
         </Link>
         <div className="text-white" onClick={swapMenu}>

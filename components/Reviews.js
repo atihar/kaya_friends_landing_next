@@ -59,9 +59,9 @@ function Reviews() {
             </div>
         </div>
         <Link href={'/become-an-early-bird'}>
-            <div className='mt-10 text-center h-96 flex flex-col justify-center items-center bg-pink-900 rounded-2xl shadow'>
-                <h2 className='mt-4 text-3xl md:text-5xl text-blue-200'>Join
-                    <div className=' text-blue-200'>early access program</div>
+            <div className='mt-10 text-center h-96 flex flex-col justify-center items-center bg-rose-800 rounded-2xl shadow'>
+                <h2 className='font-gruppo font-bold mt-4 text-3xl md:text-5xl text-blue-200'>Join
+                    <div className='font-gruppo font-bold text-blue-200'>early access program</div>
                 </h2>
                 <div className='grid md:grid-cols-2 my-6 text-gray-100'>
                     <div className='flex items-center'>
