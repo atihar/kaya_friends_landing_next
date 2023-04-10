@@ -2,25 +2,27 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import imo from "../public/assets/imo.webp";
+import speech from "../public/assets/speech.png"
 
 function Hero() {
   const [download, setDownload] = useState(false);
 
   return (
     <div className="max-w-screen-xl mx-auto px-4">
-      {/* <div className='max-w-screen-xl mx-auto font-bold text-white text-5xl md:text-8xl text-center'>
-            <p className='font-gruppo bg-gradient-to-r from-blue-600 via-blue-200 to-purple-500 inline-block text-transparent bg-clip-text'>SOCIAL CLUBS ONLINE..</p>
-        </div> */}
       <div className="grid md:grid-cols-2 items-center">
-        <div className="">
-          <h2 className="font-gruppo font-bold text-blue-300 text-5xl md:text-7xl uppercase">
+        <div className="text-center">
+          {/* <h2 className="font-alfa font-bold text-[#0097b2] text-5xl md:text-5xl uppercase">
             Web 3.0
-          </h2>
-          <h2 className="font-gruppo font-bold text-gray-200 text-5xl md:text-7xl uppercase">
+          </h2> */}
+          <div  className=' font-bold bg-none text-white text-5xl md:text-6xl text-center'>
+            <p style={{textShadow: "0 0 0.8em rgba(4,215,247,0.5)",
+        }} className='font-alfa bg-gradient-to-r from-[#04D7F7] via-[#3767B9] to-[#2966CD] inline-block text-transparent bg-clip-text'>Web 3.0</p>
+        </div>
+        <h2 className="font-alfa font-bold text-gray-200 text-6xl">
             Social Networks
           </h2>
-          <p className="text-lg mt-6 text-gray-200">
-            Whether you’re interested in gaming, business or crypto we have a
+          <p  className="font-libre text-xl mt-6 text-gray-200">
+            Whether you&apos;re interested in gaming, business or crypto<br/> we have a
             club for you.
           </p>
         </div>
@@ -42,26 +44,35 @@ function Hero() {
         </div>
       </div>
 
-      <div className="my-32 grid grid-cols-3">
+      <div className="my-32 grid md:grid-cols-2 align-baseline">
         <motion.div
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
           transition={{ delay: 1, yoyo: Infinity }}
         >
+          <div className="flex items-start w-screen">
           <Image
             width={300}
             height={400}
-            className="-translate-y-28 "
+            className="w-48 md:w-80 -translate-y-28 "
             src={imo}
             alt="app-2"
           />
+          <Image
+            width={300}
+            height={400}
+            className="w-32 md:w-64 -translate-y-28 "
+            src={speech}
+            alt="app-2"
+          />
+          </div>
         </motion.div>
 
         {!download ? (
-          <div className="mx-8 flex justify-center space-x-4 py-8">
+          <div className="mx-8 self-center space-x-4 py-8">
             <button
               onClick={() => setDownload(true)}
-              className="flex items-center gap-x-4 h-24 cursor-pointer text-white px-16 py-8 rounded-lg bg-gradient-to-r from-[#E13FE2] to-[#04D7F7]"
+              className="inline-flex gap-x-4 h-24 cursor-pointer text-white px-16 py-8 rounded-3xl bg-gradient-to-r from-[#E13FE2] to-[#04D7F7]"
             >
               <p className="text-xl uppercase font-gruppo font-bold">
                 Get Kayafriends

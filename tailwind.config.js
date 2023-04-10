@@ -7,6 +7,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'gruppo': ['Gruppo', 'cursive'],
+      'alfa': ['Alfa Slab One', 'cursive'],
+      'libre': ['Libre Baskerville', 'serif'],
     },
     extend: {},
   },
