@@ -50,7 +50,7 @@ function Hero() {
           animate={{ scale: 1 }}
           transition={{ delay: 1, yoyo: Infinity }}
         >
-          <div className="flex items-start w-screen">
+          <div className="flex items-start">
           <Image
             width={300}
             height={400}

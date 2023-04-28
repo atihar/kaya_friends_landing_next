@@ -8,7 +8,7 @@ import Reviews from "../components/Reviews";
 
 function Home() {
   return (
-    <div className="bg-black w-screen">
+    <div className="bg-black max-w-screen">
       <Head>
         <title>KayaFriends</title>
         <meta name="description" content="Kaya friends is a Dubai based Swedish startup who are working to connect professionals in a more socialistic way."/>
